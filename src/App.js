@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Search from './Search.js';
 import './Search.css';
-import Footer from './Footer.js';
-import './Footer.css';
+
 import logo from './images/react.svg';
 import news from './images/news.png';
 
@@ -25,7 +24,7 @@ class App extends Component {
           <img className="scriptLogo" src={news} alt="Javascript Logo" />
         </div>
         <Search default="bbc-news" />
-        <Footer />
+       
       </div>
     );
   }

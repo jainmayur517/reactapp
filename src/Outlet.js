@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Outlet.css';
-import { findFlag } from './helpers';
+
 
 class Outlet extends Component {
   constructor(props) {
@@ -37,24 +37,19 @@ class Outlet extends Component {
   render() {
     return (
       <div className="outletSection">
-        <h4>
-          Outlet Description{' '}
-          <span role="img" aria-label="Newspaper Emoji">
-            📰
-          </span>
-        </h4>
-
-        {this.state.data.map((item, y) => {
+      {this.state.data.map((item, y) => {
+          
+        
           if (item.id === this.state.value) {
             return (
               <div key={y} className="singleNew">
-                <div className="generalInfo">
-                  <h4>
+           
+                  <h2>
                     <a href={item.url} target="_blank" rel="noopener noreferrer">
                       {item.name}
                     </a>
-                  </h4>
-                  <img className="flagCode" src={findFlag(item.country)} alt="flag" />
+                  </h2>
+               <div className="generalInfo">
                   <p>{item.country.toUpperCase()}</p>
                   <p>{item.category.replace(/\b\w/g, l => l.toUpperCase())}</p>
                   <p>{item.language.toUpperCase()}</p>

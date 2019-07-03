@@ -5,7 +5,8 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 95%;
-	margin: 0 auto;
+    margin: 0 auto;
+    text: white;
 }
 
 .cardsContainer {
@@ -26,13 +27,15 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;
+    justify-content: space-between;
+    
 }
 
 .content {
 	padding-top: 0;
 	width: 58%;
-	padding: 5px;
+    padding: 5px;
+    text: white;
 }
 
 .card {
@@ -41,18 +44,21 @@
 	width: 49%;
 	padding: 5px;
 	margin: 10px 0;
-	border-bottom: 1px solid grey;
+    border-bottom: 1px solid grey;
+    text: white;
 }
 
 .image {
 	padding-left: 1rem;
 	width: 40%;
-	margin-bottom: 0;
+    margin-bottom: 0;
+    
 }
 
 .cardsContainer img {
 	max-width: 300px;
-	width: 100%;
+    width: 100%;
+    
 }
 
 @media screen and (max-width: 1200px) {
